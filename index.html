@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavascriptBatch-1_L-60</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+
+        </style>
+        <script>
+            let x ={
+                //Property:value
+                //functions/methods
+            }
+
+            let y ={
+                //Property:value
+                name:'Rahul',
+                sname:'kumar',
+                'friends':["R","s",'P']
+
+                //function/methods
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JS Objects</h1>
+
+        <script>
+            // console.log(y)
+            //for loop old method
+            for (var i=0;i<y.length;i++){
+                console.log(y.length)
+            }
+
+            let p = [{
+                name:'Rahul',
+                sname:'kumar',
+                'friends':["R","s",'P']
+            }]
+
+            z = ["R","s",'P']
+            // for (var i=0;i<p.length;i--){
+            //     console.log('Hello')
+            // }
+            
+            p.forEach(element => {
+                console.log("My friend is "+element)
+            });
+            //foreach loop new method
+            z.forEach(element => {
+                console.log("My friend is "+element)
+            });
+
+            /*
+            for (singlualar of plural){
+                //code block to be executed
+            }
+            */
+            /*
+            for (variable of litrable){
+                //code block to be executed
+            }
+            */
+
+            let teachers = ["AA","BB",'CC',"DD"];
+
+            for (teacher of teachers){
+                console.log(teacher);
+            }
+        </script>
+        <script>
+            let myObject ={
+                //P:V
+                AA:"Hello AA",
+                BB:"Hello BB",
+                //Method/function
+                myFunctionA:function(){
+                    console.log(this.AA);
+                },
+                
+                //P:V
+                
+                //Method/function
+                myFunctionB:()=>{
+                    console.log(this.BB+msg);
+                }
+            }
+            myObject.myFunctionA();
+            myObject.myFunctionB('How are You');
+        </script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
